@@ -1,8 +1,11 @@
 (function() {
 	"use strict";
 
-	var article = document.querySelector('[itemprop=articleBody]') ||
-		document.querySelector('.article-body');
+	var article = document.querySelector('#content')
+		|| document.querySelector('.article-body')
+		|| document.querySelector('[itemprop=articleBody]')
+		|| document.querySelector('main')
+		|| document.querySelector('[role="main"]');
 
 	var clearStyles = function() {
 		document.querySelectorAll('style,link[rel="stylesheet"]').forEach(function(e) {
