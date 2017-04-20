@@ -17,6 +17,13 @@
 		});
 	};
 
+	var setStyle = function() {
+		var style = document.createElement('link');
+		style.rel = 'stylesheet';
+		style.href = chrome.extension.getURL('style.css');
+		document.querySelector('head').append(style);
+	};
+
 	if (article) {
 		chrome.runtime.sendMessage('showPageAction');
 	}
@@ -25,6 +32,7 @@
 		if (request === 'stripArticle' && sender) {
 			document.body.innerHTML = article.innerHTML;
 			clearStyles();
+			setStyle();
 		}
 	});
 })();
