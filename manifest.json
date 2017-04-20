@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "article",
-  "description": "try to detect an article and offer to strrip everything else",
+  "description": "try to detect an article and offer to strip everything else",
   "version": "1.0",
 
   "background": {
