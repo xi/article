@@ -3,7 +3,7 @@
 
   "name": "article",
   "description": "try to detect an article and offer to strip everything else",
-  "version": "1.0",
+  "version": "2.0.0",
 
   "background": {
     "scripts": ["bg.js"],
